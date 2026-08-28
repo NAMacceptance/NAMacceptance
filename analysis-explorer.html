@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TemplateBeginEditable name="page-title" -->
+  <title>Analysis Explorer | Regulatory Acceptance of NAMs</title>
+  <!-- TemplateEndEditable -->
+  <!-- TemplateBeginEditable name="page-description" -->
+  <meta name="description" content="Explore descriptive analyses of the TSAR research snapshot.">
+  <!-- TemplateEndEditable -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../css/site.css">
+  <link rel="stylesheet" href="../css/bootstrap-studio.css">
+</head>
+<body>
+<!-- TemplateBeginEditable name="page-content" -->
+<main class="app-shell container-fluid">
+<aside class="sidebar "><a class="brand" href="../home.html" aria-label="Dashboard for Regulatory Acceptance of NAMs — Home"><img class="brand-logo" src="../images/nam-dashboard-logo-compact.png" alt="Dashboard for Regulatory Acceptance of NAMs"/></a>
+<nav aria-label="Primary navigation"><a class="nav-item" href="../home.html"><span aria-hidden="true">⌂</span>Home</a><a class="nav-item" href="../project-overview/project-overview.html"><span aria-hidden="true">◇</span>Project Overview</a><a class="nav-item" href="../methodology/methodology.html"><span aria-hidden="true">⌁</span>Methodology</a><div class="nav-group"><button class="nav-item nav-group-toggle active" type="button" aria-expanded="false" aria-controls="explore-submenu"><span aria-hidden="true">⌕</span><span class="nav-group-label">Explore the data</span><span class="nav-chevron" aria-hidden="true">›</span></button><div class="nav-submenu" id="explore-submenu"><a class="nav-subitem" href="../dictionary/data-guide.html">Data Guide</a><a class="nav-subitem" href="../explore/explore-data.html">Explore Data</a><a class="nav-subitem active" href="../analysis/analysis-explorer.html">Analysis Explorer</a><a class="nav-subitem" href="../visualizations/visualizations.html">Visualizations</a></div></div><a class="nav-item" href="../Q&A/Q&A.html"><span class="qa-nav-icon" aria-hidden="true">?</span>Q&amp;A</a><a class="nav-item" href="../findings/findings.html"><span aria-hidden="true">◎</span>Findings</a><a class="nav-item" href="../downloads/downloads.html"><span aria-hidden="true">⇩</span>Downloads</a></nav>
+<div class="sidebar-note"><span>TSAR snapshot · 28 August 2026</span><strong>147 TSAR records</strong><small>116 AI-reviewed · 31 expert-reviewed</small></div>
+<div class="sidebar-footer">
+<div class="sidebar-logos" aria-label="Institutional affiliations"><a href="https://www.uu.nl/en" target="_blank" rel="noreferrer" aria-label="Utrecht University"><img class="logo-uu" src="../images/utrecht-university.png" alt="Utrecht University"/></a></div>
+<p>Research Project</p><small>MSc Health &amp; Environment<br/>Utrecht University</small></div>
+</aside>
+<section class="workspace">
+<header class="topbar"><button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+<div class="title-wrap"><span class="eyebrow">Build your own view</span><h1>Analysis Explorer</h1><p>Filter the 147-record research snapshot, choose how to group it, and inspect the records behind every result.</p></div>
+</header>
+<div class="content page-content">
+<section class="analysis-config panel card">
+<div class="config-heading">
+<div><span class="eyebrow">Configuration</span><h2>Build your analysis</h2></div>
+<button class="btn btn-sm">Reset</button></div>
+<div class="config-grid">
+<fieldset><legend>Measure</legend>
+<div class="segment-control"><button>Number</button><button class="selected">Percentage</button></div>
+</fieldset>
+<label><span>Group results by</span><select class="form-select" data-analysis-filter="group"><option value="workflowStep">Original workflow step</option><option value="yearReceived">Year received</option><option value="organisation">Organisation</option><option value="status" selected="">Regulatory status</option><option value="stage">Regulatory stage</option><option value="code">NEW_STEP_STAGE</option><option value="endpoint">Endpoint category</option><option value="methodology">Core methodology</option><option value="applicationDomain">Application domain</option><option value="review">Methodology review level</option></select></label><label><span>Split each result by</span><select class="form-select" data-analysis-filter="split"><option value="none" selected="">Do not split</option><option value="workflowStep">Original workflow step</option><option value="yearReceived">Year received</option><option value="organisation">Organisation</option><option value="stage">Regulatory stage</option><option value="code">NEW_STEP_STAGE</option><option value="endpoint">Endpoint category</option><option value="methodology">Core methodology</option><option value="applicationDomain">Application domain</option><option value="review">Methodology review level</option></select></label></div>
+<div class="provenance-legend"><span><i class="source-chip">TSAR source</i> Original snapshot fields</span><span><i class="derived-chip">Derived</i> Research classifications</span></div>
+</section>
+<section class="analysis-filters">
+<div class="panel card card"><span class="source-chip">Original TSAR variables</span><h3>Source-data filters</h3>
+<div class="analysis-filter-grid"><label><span>Year received</span><select class="form-select" data-analysis-filter="yearReceived"><option selected="">All years</option><option>2026</option><option>2025</option><option>2024</option><option>2022</option><option>2021</option><option>2020</option><option>2019</option><option>2018</option><option>2017</option><option>2016</option><option>2015</option><option>2014</option><option>2013</option><option>2012</option><option>2011</option><option>2010</option><option>2009</option><option>2008</option><option>2007</option><option>2006</option><option>2005</option><option>2004</option><option>2003</option><option>2002</option><option>2001</option><option>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1995</option><option>1994</option></select></label><label><span>Organisation</span><select class="form-select" data-analysis-filter="organisation"><option selected="">All organisations</option><option>BraCVAM - Brazil</option><option>EURL ECVAM - European Union</option><option>ICCVAM/NICEATM - United States</option><option>JaCVAM - Japan</option><option>KoCVAM - Republic of Korea</option><option>OECD - International Organisation</option></select></label><label><span>Original workflow step</span><select class="form-select" data-analysis-filter="workflowStep"><option selected="">All workflow steps</option><option>99</option><option>Peer-review</option><option>Recommendation</option><option>Regulatory acceptance/Standards</option><option>Submission</option><option>Validation</option><option>Validation, Peer-review</option></select></label></div>
+</div>
+<div class="panel card card derived"><span class="derived-chip">Derived research variables</span><h3>Classification filters</h3>
+<div class="analysis-filter-grid"><label><span>Regulatory stage</span><select class="form-select" data-analysis-filter="stepStage"><option selected="">All stages</option><option>Regulatory assessment</option><option>Test Submission</option><option>Unknown</option><option>Validation</option></select></label><label><span>Regulatory status</span><select class="form-select" data-analysis-filter="topic"><option selected="">All statuses</option><option>Acceptance pending</option><option>Adopted</option><option>Discontinued</option><option>Finalised</option><option>Not applicable</option><option>Ongoing</option><option>Rejected</option><option>Unknown</option></select></label><label><span>Endpoint</span><select class="form-select" data-analysis-filter="workflowStage"><option selected="">All endpoints</option><option>Acute toxicity/basal cytotoxicity</option><option>Bioaccessibility/bioelution</option><option>Carcinogenicity</option><option>Cardiotoxicity</option><option>Developmental/reproductive toxicity</option><option>Endocrine disruption</option><option>Environmental toxicity</option><option>Eye irritation/serious eye damage</option><option>Genotoxicity/mutagenicity</option><option>Neurotoxicity</option><option>Other / unclear</option><option>Phototoxicity/photoreactivity</option><option>Pyrogenicity</option><option>Repeated dose/chronic toxicity</option><option>Skin irritation/corrosion</option><option>Skin sensitisation</option><option>Toxicokinetics/ADME/permeability</option><option>Vaccine quality control/contamination</option></select></label><label><span>Core methodology</span><select class="form-select" data-analysis-filter="stage"><option selected="">All methodologies</option><option>Ex vivo</option><option>In chemico</option><option>In silico</option><option>In vitro</option><option>In vivo</option><option>Mixed</option><option>Other</option></select></label><label><span>Review level</span><select class="form-select" data-analysis-filter="status"><option selected="">All review levels</option><option>AI-reviewed</option><option>Reviewed</option></select></label></div>
+</div>
+</section>
+<section class="analysis-result panel card">
+<header>
+<div><span class="eyebrow">Analysis result</span><h2>Regulatory status</h2><p>147 of 147 records selected · Share of selected records: % (n=x)</p></div>
+<div class="analysis-actions"><button class="btn btn-sm">Share view</button><button class="btn btn-sm">Download table</button><button class="btn btn-sm">Download image</button>
+<div class="segment-control"><button class="selected">Graph</button><button class="">Table</button></div>
+</div>
+</header>
+<div class="analysis-chart" data-analysis-chart>
+<div class="analysis-row"><span>Discontinued</span>
+<div class="stack-track"><i title="Records: 54" style="width:100%;background:#0a3d80"></i></div>
+<strong>36.7% (n=54)</strong></div>
+<div class="analysis-row"><span>Adopted</span>
+<div class="stack-track"><i title="Records: 53" style="width:98.1%;background:#0a3d80"></i></div>
+<strong>36.1% (n=53)</strong></div>
+<div class="analysis-row"><span>Finalised</span>
+<div class="stack-track"><i title="Records: 16" style="width:29.6%;background:#0a3d80"></i></div>
+<strong>10.9% (n=16)</strong></div>
+<div class="analysis-row"><span>Acceptance pending</span>
+<div class="stack-track"><i title="Records: 9" style="width:16.7%;background:#0a3d80"></i></div>
+<strong>6.1% (n=9)</strong></div>
+<div class="analysis-row"><span>Ongoing</span>
+<div class="stack-track"><i title="Records: 9" style="width:16.7%;background:#0a3d80"></i></div>
+<strong>6.1% (n=9)</strong></div>
+<div class="analysis-row"><span>Rejected</span>
+<div class="stack-track"><i title="Records: 4" style="width:7.4%;background:#0a3d80"></i></div>
+<strong>2.7% (n=4)</strong></div>
+<div class="analysis-row"><span>Not applicable</span>
+<div class="stack-track"><i title="Records: 1" style="width:1.9%;background:#0a3d80"></i></div>
+<strong>0.7% (n=1)</strong></div>
+<div class="analysis-row"><span>Unknown</span>
+<div class="stack-track"><i title="Records: 1" style="width:1.9%;background:#0a3d80"></i></div>
+<strong>0.7% (n=1)</strong></div>
+</div>
+<p class="provenance-note">Provenance: This grouping is a derived research variable. Denominator: 147 selected records. Multi-label endpoint groupings can count one record more than once.</p></section>
+<section class="section-block">
+<div class="block-header">
+<div><span class="eyebrow">Underlying records</span><h2>Current selection</h2></div>
+<p>Showing 10 of 147 records behind this view.</p></div>
+<div class="underlying-grid" data-analysis-records><button class="panel card card"><span>TM2026-01 · Ongoing</span><strong>LS Bioassay</strong><small>Acute toxicity/basal cytotoxicity</small><i>Ex vivo →</i></button><button class="panel card card"><span>TM2025-02 · Ongoing</span><strong>InFiniteLungDT</strong><small>Repeated dose/chronic toxicity</small><i>In silico →</i></button><button class="panel card card"><span>TM2019-06 · Ongoing</span><strong>TYRO-IOD</strong><small>Endocrine disruption</small><i>In vitro →</i></button><button class="panel card card"><span>TM2017-02 · Discontinued</span><strong>TR MARCoNI</strong><small>Endocrine disruption</small><i>In vitro →</i></button><button class="panel card card"><span>TM2016-01 · Discontinued</span><strong>EDITOX</strong><small>Neurotoxicity</small><i>In vitro →</i></button><button class="panel card card"><span>TM2016-03 · Discontinued</span><strong>ToxTracker</strong><small>Genotoxicity/mutagenicity</small><i>In vitro →</i></button><button class="panel card card"><span>TM2019-18 · Discontinued</span><strong>PMOD-hNPC</strong><small>Endocrine disruption</small><i>In vitro →</i></button><button class="panel card card"><span>TM2019-16 · Finalised</span><strong>ZETA</strong><small>Endocrine disruption</small><i>In vivo →</i></button><button class="panel card card"><span>TM2019-03 · Finalised</span><strong>TSH-CHOK1</strong><small>Endocrine disruption</small><i>In vitro →</i></button><button class="panel card card"><span>TM2019-10 · Finalised</span><strong>DIO1-SKR</strong><small>Endocrine disruption</small><i>In chemico →</i></button></div>
+<button class="show-more">Show more records <span>20 more</span></button></section>
+</div>
+<footer class="site-footer">
+<div><strong>Dashboard for Regulatory Acceptance of NAMs</strong><span>New Approach Methods in Toxicology</span></div>
+<p>Research Project</p><small>Source context: European Commission JRC TSAR</small></footer>
+</section>
+</main>
+<!-- TemplateEndEditable -->
+<script src="../js/base.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/analysis.js?v=20260828-record-cards"></script>
+</body>
+</html>
+
+
+
+
+
+
+
